@@ -23,6 +23,8 @@ class SearchNode{
 // fucntion pointer for heruristic function
 typedef int (*heuristicFunction)(vector<vector<int>> &grid);
 heuristicFunction heuristic;
+int expanded_nodes = 0 ;
+int explored_nodes = 0 ;
 
 
 
@@ -370,6 +372,7 @@ void AstarSearch (vector<vector<int>> &grid){
 
     SearchNode * start_node = new SearchNode(grid, 0, nullptr);
     open_list.push(start_node);
+    explored_nodes++ ;
     closed_list.push_back(grid_to_string(grid));
     int k = grid[0].size();
 
@@ -378,6 +381,7 @@ void AstarSearch (vector<vector<int>> &grid){
     while (!open_list.empty()){
         SearchNode * current_node = open_list.top();
         open_list.pop() ;
+        expanded_nodes++ ;
 
 
         if (isGoalState(current_node->current_configuration)){
@@ -398,6 +402,7 @@ void AstarSearch (vector<vector<int>> &grid){
             }
             SearchNode * new_node = new SearchNode(neighbor, current_node->g + 1, current_node);
             open_list.push(new_node);
+            explored_nodes++ ;
             closed_list.push_back(neighbour_str);
             
 
@@ -479,6 +484,9 @@ int main (int argc, char * argv[]){
     cout << "Is Solvable  "<< isSolvable(input_grid) << endl;
 
     AstarSearch(input_grid);
+    cout << "Explored Nodes: " << explored_nodes << endl;
+    cout << "Expanded Nodes: " << expanded_nodes << endl;
+    
     
     
     return 0 ;

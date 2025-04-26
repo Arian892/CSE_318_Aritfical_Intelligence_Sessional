@@ -1,5 +1,5 @@
 g++ main.cpp -o main
-./main hamming
+./main linearConflict
 
 
 # hamming
