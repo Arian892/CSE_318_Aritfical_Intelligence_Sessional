@@ -395,7 +395,7 @@ int main() {
             cerr << "Cannot open " << file_name << endl;
             continue;
         }
-
+         cout << "Processing " << file_name << endl;
         int vertices, edges;
         fin >> vertices >> edges;
         Graph g(vertices, edges);
@@ -436,9 +436,12 @@ int main() {
         string graph_id = "G" + to_string(i);
         int known = known_best.count(graph_id) ? known_best[graph_id] : 0;
 
+
         fout << graph_id << "," << vertices << "," << edges << "," << randomized_val << "," << greedy_val << ","
              << semi_val << "," << local_iters << "," << local_avg << "," << grasp_iters << "," << grasp_val << "," << known << "\n";
+        
 
+    cout << "Graph " << i << " processed." << endl;
         fin.close();
     }
 
