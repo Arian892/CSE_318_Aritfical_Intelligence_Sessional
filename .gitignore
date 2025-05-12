@@ -2,3 +2,8 @@
 *.out
 *.o
 **/.vscode/
+venv/
+.venv/
+env/
+**/venv/
+**/.venv/
