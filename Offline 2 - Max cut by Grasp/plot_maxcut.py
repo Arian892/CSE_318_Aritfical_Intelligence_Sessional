@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load your CSV file
-df = pd.read_csv("2105xxx.csv")
+df = pd.read_csv("2105106.csv")
 
 # Filter for Graphs G1 to G10
 df_10 = df[df['Name'].str.contains(r'^G(10|[1-9])$', regex=True)]
