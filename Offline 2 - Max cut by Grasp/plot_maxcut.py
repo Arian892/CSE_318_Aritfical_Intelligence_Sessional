@@ -30,7 +30,7 @@ plt.bar([i + 2*bar_width for i in x], local, width=bar_width, label='Local Searc
 plt.xticks(x, graphs)
 plt.xlabel('Graph')
 plt.ylabel('Max Cut Value')
-plt.title('Max Cut (Graph 1–10)')
+plt.title('Max Cut (Graph 1-10)')
 plt.legend()
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
