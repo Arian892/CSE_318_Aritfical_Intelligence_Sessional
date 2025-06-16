@@ -146,12 +146,14 @@ def start_human_vs_human():
 def start_human_vs_ai():
     print("Starting Human vs AI mode (placeholder)")
     reset_board()
-    # TODO: Implement AI move logic
+   
 
 def start_ai_vs_ai():
-    print("Starting AI vs AI mode (placeholder)")
+    print("Starting AI vs AI mode")
     reset_board()
-    # TODO: Implement AI vs AI autoplay logic
+    # run_ai_vs_ai_turn()
+
+    
 
 
 def on_mode_change(*args):
