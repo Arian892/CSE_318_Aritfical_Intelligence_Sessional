@@ -1,0 +1,30 @@
+Column [age] has 73 unique values:
+-----------------------
+Column [workclass] has 9 unique values:
+-----------------------
+Column [fnlwgt] has 21648 unique values:
+-----------------------
+Column [education] has 16 unique values:
+-----------------------
+Column [education_num] has 16 unique values:
+-----------------------
+Column [marital_status] has 7 unique values:
+-----------------------
+Column [occupation] has 15 unique values:
+-----------------------
+Column [relationship] has 6 unique values:
+-----------------------
+Column [race] has 5 unique values:
+-----------------------
+Column [sex] has 2 unique values:
+-----------------------
+Column [capital_gain] has 119 unique values:
+-----------------------
+Column [capital_loss] has 92 unique values:
+-----------------------
+Column [hours_per_week] has 94 unique values:
+-----------------------
+Column [native_country] has 42 unique values:
+-----------------------
+Column [income] has 2 unique values:
+-----------------------
